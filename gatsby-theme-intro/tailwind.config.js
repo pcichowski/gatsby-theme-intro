@@ -19,11 +19,21 @@ module.exports = (theme, darktheme) => {
       },
       extend: {
         colors: {
+          // Set a default grey skill color, so the opacity attribute applies successfully (otherwise, the contrast with text is poor)
+          // We pick an arbitrary high numer (30) which should be more than any reasonable list of skills 
+          ...((colors, darkColors) => {
+            _default_skill_colors = {};
+            for (let k = 1; k <= 30; k++) {
+              _default_skill_colors[`skill-${k}`] = "#888888";
+              _default_skill_colors[`skill-${k}-dark`] = "#888888";
+            }
+            return _default_skill_colors})(colors, darkColors),
+          // Insert the colors from the light theme
           ...colors,
           "back-light": color(colors.back)
             .lighten(0.18)
             .hex(),
-          // Add '-dark' to all the color names in `darkColors`, to distinguish them from `colors`
+          // Insert colors from dark theme, adding '-dark' to all names, to distinguish them from `colors`
           ...((colors) => {
                 _darkColors = {};
                 for (let k in colors) {
