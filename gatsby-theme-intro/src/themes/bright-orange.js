@@ -1,5 +1,5 @@
 module.exports = {
-  'back': '#eeeeed',
+  'back': '#f6f6f8',
   'front': '#393e46',
   'lead': '#f8b500',
   'lead-text': '#f7f7f7',
