@@ -32,7 +32,7 @@
 
 @media (prefers-color-scheme: dark) {
   .form-control { @apply text-front-dark; }
-  .form-input { @apply bg-back-light-dark; }
+  .form-input { @apply bg-back-light; }
   .input-range::range-track { @apply bg-back-dark; }
   .input-range::range-thumb { @apply bg-lead-dark; }
 }
