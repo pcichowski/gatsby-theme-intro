@@ -1,6 +1,6 @@
 module.exports = {
   'back': '#0d1117',
-  'front': '#fde9ef',
+  'front': '#faf8f8',
   'lead': '#3770dd',
   'lead-text': '#ffffff',
   'line': '#fde9ef',
