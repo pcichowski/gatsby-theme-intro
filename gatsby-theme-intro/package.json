@@ -1,7 +1,7 @@
 {
   "name": "@silentsky/gatsby-theme-intro",
   "description": "Personal branding theme for developers",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
   "main": "index.js",
   "dependencies": {
@@ -49,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alcrene/gatsby-theme-intro.git"
+    "url": "git+https://github.com/pcichowski/gatsby-theme-intro.git"
   },
   "bugs": {
-    "url": "https://github.com/alcrene/gatsby-theme-intro/issues"
+    "url": "https://github.com/pcichowski/gatsby-theme-intro/issues"
   }
 }
