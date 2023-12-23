@@ -18,7 +18,8 @@ const SEO = ( {title} ) => {
 
   return (
     <>
-      <title>{title} | {site.siteMetadata.title}</title>
+      {/*<title>{title} | {site.siteMetadata.title}</title>*/}
+      <title>{site.siteMetadata.title} | Fullstack Developer</title>
       <meta name="description" content={site.siteMetadata.description} />
       <meta name="og:title" content={site.siteMetadata.title} />
       <meta name="og:description" content={site.siteMetadata.description} />

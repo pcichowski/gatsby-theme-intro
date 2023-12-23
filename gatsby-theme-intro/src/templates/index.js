@@ -12,6 +12,10 @@ import "../styles/style.css"
 const IndexPage = ({ data, pageContext }) => {
   const { history, profile, projects, site, social } = data
 
+  React.useEffect(() => {
+    document.getElementsByTagName("html")[0].classList.add("dark");
+  }, []);
+
   return (
     <div className="antialiased bg-back dark:bg-back-dark leading-normal font-text text-front dark:text-front-dark">
       <Header initials={profile.initials} />
@@ -29,7 +33,7 @@ const IndexPage = ({ data, pageContext }) => {
 
       <Footer
         name={profile.name}
-        showThemeLogo={pageContext.showThemeLogo}
+        showThemeLogo={false}
       />
     </div>
   )

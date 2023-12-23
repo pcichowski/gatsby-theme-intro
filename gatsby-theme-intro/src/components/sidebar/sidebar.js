@@ -3,10 +3,11 @@ import Location from "./location"
 import ProfileImage from "./profile-image"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 import SocialLinks from "../social-links/social-links"
+import About from "../about/about";
 
 const Sidebar = ({ profile, social }) => (
-  <aside className="w-full lg:w-1/3 lg:border-r border-line dark:border-line-dark lg:px-6 xl:px-12">
-    <div className="flex flex-col h-full justify-between">
+  <aside className="w-full lg:w-1/3 lg:border-r border-line dark:border-line-dark lg:px-6 xl:px-4">
+    <div className="flex flex-col h-full">
       <div>
         <h2 className="font-header font-light text-front dark:text-front-dark text-2xl leading-none mb-4">
           {profile.profession}
@@ -26,12 +27,14 @@ const Sidebar = ({ profile, social }) => (
         )}
       </div>
 
-      <div className="pt-8 pb-12 lg:py-0">
-        <h5 className="font-header font-semibold text-front dark:text-front-dark text-sm uppercase mb-3">
-          Connect
+      <div className="pt-8 pb-12 lg:py-0 mt-12">
+        <h5 className="font-header font-semibold text-front dark:text-front-dark text-sm uppercase mb-4">
+          Socials
         </h5>
         <SocialLinks social={social} />
       </div>
+
+      {profile.about && <About about={profile.about} />}
     </div>
   </aside>
 )

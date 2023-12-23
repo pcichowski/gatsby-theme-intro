@@ -11,7 +11,7 @@ module.exports = (theme, darktheme) => {
     safelist: [{pattern: /text-skill-.+/},
                {pattern: /border-skill-.+/}],
     
-    darkMode: "media",
+    darkMode: "class",
     theme: {
       fontFamily: {
         header: ["Source Sans Pro", "sans-serif"],
@@ -49,6 +49,9 @@ module.exports = (theme, darktheme) => {
         spacing: {
           "14": "3.5rem",
         },
+        blur: {
+          xs: '2px',
+        }
       },
     },
   }

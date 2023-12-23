@@ -4,7 +4,8 @@ module.exports = {
   'lead': '#f8b500',
   'lead-text': '#f7f7f7',
   'line': '#d5d5ce',
-  'skill-1': '#1e2127',
-  'skill-2': '#393e46',
-  'skill-3': '#5c636e',
+  'skill-1': '#c21b5b',
+  'skill-2': '#3700b3',
+  'skill-3': '#02ae9e',
+  'skill-4': '#ee4540',
 };

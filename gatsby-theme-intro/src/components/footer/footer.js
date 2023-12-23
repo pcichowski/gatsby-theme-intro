@@ -3,13 +3,15 @@ import React from "react"
 import { ProfileType } from "../../types"
 
 const Footer = ({ name, showThemeLogo = true }) => (
-  <footer className="bg-front dark:bg-front-dark mt-16 pt-8 pb-16">
+  <footer className="bg-front dark:bg-back-light-dark mt-16 pt-12 pb-12">
     <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex items-center">
-      <div className="w-2/3 text-back-light dark:text-back-light-dark font-header text-xs">
+      <div className="w-2/3 text-back-light dark:text-front-dark font-header text-xs">
         <b>
           &copy; {new Date().getFullYear()} {name}.
         </b>{" "}
         All rights reserved.
+        <br/>
+        Original design by <a href="https://github.com/wkocjan">Wojciech Kocjan</a> @ <a href="https://weeby.studio/intro/">Weeby studios</a> and <a href="https//github.com/alcrene/gatsby-theme-intro-academic">Alexandre René</a>, with adaptations by Paweł Cichowski
       </div>
       <div className="w-1/3 text-right">
         {showThemeLogo && (

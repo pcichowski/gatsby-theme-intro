@@ -10,8 +10,8 @@ export const ProfileType = {
     min: number.isRequired,
   }).isRequired,
   company: string.isRequired,
-  focus: string.isRequired,
-  focus_url: string,
+  education: string.isRequired,
+  education_description: string,
   for_hire: bool.isRequired,
   image: shape({
     childImageSharp: object.isRequired,
@@ -36,12 +36,12 @@ export const query = graphql`
       min
     }
     company
-    focus
-    focus_url
+    education
+    education_description
     for_hire
     image {
       childImageSharp {
-        gatsbyImageData(layout: FIXED, width: 144, height: 144, quality: 85)
+        gatsbyImageData(layout: FIXED, width: 180, height: 180, quality: 85)
       }
       publicURL
     }

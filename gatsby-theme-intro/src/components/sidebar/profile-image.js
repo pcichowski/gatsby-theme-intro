@@ -7,10 +7,9 @@ const ProfileImage = ({ image, name }) => (
     <GatsbyImage
       image={image.childImageSharp.gatsbyImageData}
       alt={name}
-      className="rounded-full relative z-10"
+      className="rounded-full relative z-0 ml-4"
       loading="eager"
     />
-    <div className="absolute inset-0 rounded-full bg-lead dark:bg-lead-dark z-0 transform translate-x-12"></div>
   </div>
 )
 

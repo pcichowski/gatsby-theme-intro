@@ -5,6 +5,7 @@ export const SocialType = {
   name: oneOf([
     "behance",
     "dribbble",
+    "email",
     "facebook",
     "github",
     "goodreads",

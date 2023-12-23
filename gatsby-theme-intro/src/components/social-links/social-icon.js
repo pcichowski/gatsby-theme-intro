@@ -2,6 +2,7 @@ import React from "react"
 import {
   FaBehance,
   FaDribbble,
+  FaEnvelope,
   FaFacebook,
   FaGithub,
   FaGoodreadsG,
@@ -19,6 +20,7 @@ const SocialIcon = ({ name, ...params }) => {
   const icons = {
     behance: FaBehance,
     dribbble: FaDribbble,
+    email: FaEnvelope,
     facebook: FaFacebook,
     github: FaGithub,
     goodreads: FaGoodreadsG,

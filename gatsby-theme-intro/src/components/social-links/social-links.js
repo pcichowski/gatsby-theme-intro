@@ -11,7 +11,7 @@ const SocialLinks = ({ social }) => {
         return (
           <a
             aria-label={name}
-            className={`inline-flex w-12 h-12 justify-center items-center rounded-full -ml-3 ${colorsClass} hover:shadow-lg transition-shadow duration-150`}
+            className={`inline-flex w-12 h-12 justify-center items-center rounded-full -ml-2 ${colorsClass} hover:shadow-lg transition-shadow duration-150 dark:hover:shadow-gray-800`}
             href={url}
             key={name}
             rel="noopener noreferrer"
