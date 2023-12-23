@@ -42,9 +42,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .history:before { @apply bg-line-dark; }
-  .history-entry:first-child .dot-bg { @apply bg-front-dark; }
-  .history-entry:first-child .dot { @apply bg-lead-dark; }
+  .history:before { @apply bg-line; }
+  .history-entry:first-child .dot-bg { @apply bg-front; }
+  .history-entry:first-child .dot { @apply bg-lead; }
 }
 .dark .history:before { @apply bg-line-dark; }
 .dark .history-entry:first-child .dot-bg { @apply bg-front-dark; }
